@@ -17,17 +17,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         showOnLabel(txt: "Hello World! Blah! Blah!")
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+            
+            self.showOnLabel(txt: "Good Bye World! Blah! Blah!")
+        }
     }
         
     func showOnLabel(txt: String) {
         
         print(txt)
         self.txtLbl.text = txt
-    }
-        
-    func showOnLabel(txt: String) {
-        
-        print(txt)
     }
 }
 
