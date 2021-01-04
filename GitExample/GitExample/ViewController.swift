@@ -18,15 +18,41 @@ class ViewController: UIViewController {
         
         showOnLabel(txt: "Hello World! Blah! Blah!")
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+//
+//            self.showOnLabel(txt: "Good Bye World! Blah! Blah!")
+//        }
+        
+        var totalSeconds = 25
+        
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (Timer) in
             
-            self.showOnLabel(txt: "Good Bye World! Blah! Blah!")
+            if totalSeconds > 0 {
+                                
+                let zeroTxt = totalSeconds < 11 ? "0" : ""
+                
+                totalSeconds = totalSeconds - 1
+
+                let str = """
+                    Hello World! Blah! Blah!
+                    \(zeroTxt)\(totalSeconds)
+                """
+                
+                self.showOnLabel(txt: str)
+                
+            } else {
+                
+                Timer.invalidate()
+                
+                self.showOnLabel(txt: "Good Bye World! Blah! Blah!")
+            }
         }
     }
         
     func showOnLabel(txt: String) {
         
-        print(txt)
+        self.txtLbl.numberOfLines = 0
+        
         self.txtLbl.text = txt
     }
 }
