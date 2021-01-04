@@ -29,15 +29,15 @@ class ViewController: UIViewController {
             
             if totalSeconds > 0 {
                                 
-                let zeroTxt = totalSeconds < 11 ? "0" : ""
+                let zeroTxt = totalSeconds < 10 ? "0" : ""
                 
-                totalSeconds = totalSeconds - 1
-
                 let str = """
                     Hello World! Blah! Blah!
                     \(zeroTxt)\(totalSeconds)
                 """
                 
+                totalSeconds = totalSeconds - 1
+
                 self.showOnLabel(txt: str)
                 
             } else {

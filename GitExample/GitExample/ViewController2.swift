@@ -19,7 +19,7 @@ class ViewController2: UIViewController {
     
     @IBAction func navigate_Btn_Action(_ sender: Any) {
         
-        let storyBoard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
         
         let vwCtrl = storyBoard.instantiateViewController(identifier: "ViewController")
         
