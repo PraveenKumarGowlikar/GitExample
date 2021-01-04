@@ -16,5 +16,10 @@ class ViewController: UIViewController {
         
         print("Hello World! Blah! Blah!")
     }
+        
+    func showOnLabel(txt: String) {
+        
+        print(txt)
+    }
 }
 
