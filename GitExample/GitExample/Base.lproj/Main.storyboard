@@ -18,11 +18,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4L-Qm-1Yc">
                                 <rect key="frame" x="20" y="64" width="374" height="778"/>
                                 <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="25"/>
-                                <color key="textColor" red="0.64705882349999999" green="0.1137254902" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="C4L-Qm-1Yc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7nc-pb-9v8"/>
                             <constraint firstItem="C4L-Qm-1Yc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lQk-oi-5cc"/>
@@ -48,8 +48,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKY-Bf-Kaw">
-                                <rect key="frame" x="97" y="728" width="220" height="50"/>
-                                <color key="backgroundColor" red="0.64705882349999999" green="0.1137254902" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="97" y="528" width="220" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="czW-Lg-lSI"/>
                                     <constraint firstAttribute="height" constant="50" id="gwS-9d-GYu"/>
@@ -68,11 +68,8 @@
                                     <action selector="navigate_Btn_Action:" destination="kBg-he-gEQ" eventType="touchUpInside" id="NUu-Hb-Iae"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="donut" translatesAutoresizingMaskIntoConstraints="NO" id="IUe-Ey-mFa">
-                                <rect key="frame" x="20" y="108" width="374" height="600"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="D4h-77-OJU"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GitHub-logo" translatesAutoresizingMaskIntoConstraints="NO" id="IUe-Ey-mFa">
+                                <rect key="frame" x="50" y="108" width="314" height="400"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
@@ -92,8 +89,8 @@
                             <constraint firstItem="IUe-Ey-mFa" firstAttribute="top" secondItem="BK9-rt-aGa" secondAttribute="top" constant="20" id="OAf-JI-NRF"/>
                             <constraint firstItem="FKY-Bf-Kaw" firstAttribute="centerX" secondItem="C6S-bn-FeQ" secondAttribute="centerX" id="QrZ-tN-6sX"/>
                             <constraint firstItem="FKY-Bf-Kaw" firstAttribute="top" secondItem="IUe-Ey-mFa" secondAttribute="bottom" constant="20" id="eKY-aI-e2z"/>
-                            <constraint firstItem="IUe-Ey-mFa" firstAttribute="leading" secondItem="BK9-rt-aGa" secondAttribute="leading" constant="20" id="gdG-dA-LDu"/>
-                            <constraint firstItem="BK9-rt-aGa" firstAttribute="trailing" secondItem="IUe-Ey-mFa" secondAttribute="trailing" constant="20" id="hCs-4Q-NHe"/>
+                            <constraint firstItem="IUe-Ey-mFa" firstAttribute="leading" secondItem="BK9-rt-aGa" secondAttribute="leading" constant="50" id="gdG-dA-LDu"/>
+                            <constraint firstItem="BK9-rt-aGa" firstAttribute="trailing" secondItem="IUe-Ey-mFa" secondAttribute="trailing" constant="50" id="hCs-4Q-NHe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BK9-rt-aGa"/>
                     </view>
@@ -123,6 +120,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="donut" width="1000" height="1250"/>
+        <image name="GitHub-logo" width="400" height="400"/>
     </resources>
 </document>
