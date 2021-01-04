@@ -24,5 +24,10 @@ class ViewController: UIViewController {
         print(txt)
         self.txtLbl.text = txt
     }
+        
+    func showOnLabel(txt: String) {
+        
+        print(txt)
+    }
 }
 
