@@ -68,7 +68,7 @@
                                     <action selector="navigate_Btn_Action:" destination="kBg-he-gEQ" eventType="touchUpInside" id="NUu-Hb-Iae"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="IUe-Ey-mFa">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="donut" translatesAutoresizingMaskIntoConstraints="NO" id="IUe-Ey-mFa">
                                 <rect key="frame" x="20" y="108" width="374" height="600"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="600" id="D4h-77-OJU"/>
@@ -76,6 +76,12 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -117,6 +123,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="image" width="786" height="522"/>
+        <image name="donut" width="1000" height="1250"/>
     </resources>
 </document>
