@@ -21,7 +21,7 @@ class ViewController2: UIViewController {
         
         let storyBoard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
         
-        let vwCtrl = storyBoard.instantiateViewController(identifier: "ViewController2")
+        let vwCtrl = storyBoard.instantiateViewController(identifier: "ViewController")
         
         self.navigationController?.pushViewController(vwCtrl, animated: true)
     }
