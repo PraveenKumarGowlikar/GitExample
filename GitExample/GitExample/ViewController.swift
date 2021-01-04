@@ -15,7 +15,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+
+        self.title = "Dashboard"
+
         showOnLabel(txt: "Hello World! Blah! Blah!")
         
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
