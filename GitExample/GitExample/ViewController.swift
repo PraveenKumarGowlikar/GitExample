@@ -16,12 +16,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        print("Hello World! Blah! Blah!")
+        showOnLabel(txt: "Hello World! Blah! Blah!")
     }
         
     func showOnLabel(txt: String) {
         
         print(txt)
+        self.txtLbl.text = txt
     }
 }
 
